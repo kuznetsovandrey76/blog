@@ -1,0 +1,25 @@
+---
+layout: "wrapper"
+author: "Andrey Kuznetsov"
+---
+<h1>Test layout</h1>
+<p>{{ site.email }}</p>   
+<p>{{ layout.author }}</p>
+<hr>
+{{ content }}
+
+<p>for data you can use yml, json, csv</p>
+
+{% for person in site.data. people %}
+    {{ person.name}}, {{ person.role }} <br>
+{% endfor %}
+
+<!-- {{ site.static_files.path }} -->
+
+<!-- {% for file in site.static_files %}
+    <img src="{{ file.path }}" alt="{{ file.name }}">
+{% endfor %} -->
+
+<img src="{{ assets/img/logo.jpg | relative_url}}">
+<img src="/assets/img/logo.jpg">
+<p>123</p>

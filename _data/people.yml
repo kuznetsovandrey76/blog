@@ -1,0 +1,5 @@
+- name: "Andrey"
+  role: "admin"
+
+- name: "Oleg"
+  role: "user"
