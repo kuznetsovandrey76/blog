@@ -1,0 +1,8 @@
+---
+layout: post-new
+date: 2019-01-02 10:00:00 +0300
+permalink: /:year/:month/:day/:title.html
+title: "Тестовый"
+---
+
+
