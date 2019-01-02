@@ -5,10 +5,10 @@ permalink: /:year/:month/:day/:title.html
 title: "Добро пожаловать в 2019-й"
 ---
 {%- assign date_format = site.minima.date_format | default: "%d-%m-%Y %H:%M" -%}
-<p class="content__date">{{ page.date | date: date_format }}</p> 
 <h1 class="content__title">{{ page.title}}</h1>  
+<p class="content__date">{{ page.date | date: date_format }}</p> 
 <div class="post">
-    <img class="image post__image" src="{{ site.images_path }}/02-01-2019.jpg">
     <p class="post__text">Всем привет, это первый пост в Новом году</p>
+    <img class="image post__image" src="{{ site.images_path }}/02-01-2019.jpg">    
 </div>
 
