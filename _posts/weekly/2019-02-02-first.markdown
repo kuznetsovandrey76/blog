@@ -1,0 +1,9 @@
+---
+layout: test
+# layout: default
+# permalink: "/test-page/"
+# permalink: /:year/:month/:day/:title
+date:   2019-01-02 10:04:00 +0300
+permalink: /:year/:month/:day/:title.html
+---
+Hello everybody, my name is Andrey!
