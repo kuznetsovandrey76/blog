@@ -1,6 +1,5 @@
 ---
-layout: page
-# layout: default
+layout: default
 title: "Donate"
 ---
 Donate page.

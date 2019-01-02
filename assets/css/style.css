@@ -1,3 +1,39 @@
 body {
-    background: khaki;
+    margin: 0;
+}
+
+/* HEADER */
+.header {
+    background: #fc0;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.header__link {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+/* CONTENT */
+.content {
+ margin: 10px;   
+}
+
+.post {
+    list-style-type: none;
+    padding: 10px 0 0 10px;
+    margin: 0;
+}
+.post__date {
+    font-style: italic;
+    font-size: 12px;
+}
+.post__item {
+    margin-bottom: 10px;
+}
+.post__link {
+    display: block;
+    font-size: 20px;
 }

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ site.title }}</title>
-</head>
+    {%- include head.html -%}
 <body>
     {% include header.html %}
+
     {{ content }}
+    
+    {%- include footer.html -%}
 </body>
 </html>
