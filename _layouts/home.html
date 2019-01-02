@@ -5,12 +5,12 @@ permalink: /
 
 {%- if site.posts.size > 0 -%}
 <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2> -->
-<ul class="post">
+<ul class="posts">
     {%- for post in site.posts -%}
-    <li class="post__item">
-    {%- assign date_format = site.minima.date_format | default: "%d-%m-%Y %H:%M" -%}
-    <span class="post__date">{{ post.date | date: date_format }}</span>
-    <a class="post__link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    <li class="posts__item">
+        {%- assign date_format = site.minima.date_format | default: "%d-%m-%Y" -%}
+        <span class="posts__date">{{ post.date | date: date_format }}</span>
+        <a class="posts__link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
     </li>
     {%- endfor -%}
 </ul>

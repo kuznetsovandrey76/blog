@@ -20,20 +20,42 @@ body {
 .content {
  margin: 10px;   
 }
+.content__title {
+    margin: 0;
+}
+.content__date {
+    margin: 0;
+    font-size: 12px;
+    font-style: italic;
+}
 
-.post {
+.posts {
     list-style-type: none;
     padding: 10px 0 0 10px;
     margin: 0;
 }
-.post__date {
+.posts__date {
     font-style: italic;
     font-size: 12px;
 }
-.post__item {
+.posts__item {
     margin-bottom: 10px;
 }
-.post__link {
+.posts__link {
     display: block;
     font-size: 20px;
+}
+
+.post {
+    display: flex;
+}
+.post__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px;
+}
+.post__text {
+    font-style: italic;
 }
