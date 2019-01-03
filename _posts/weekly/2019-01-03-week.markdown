@@ -11,6 +11,8 @@ rise: "Личностный рост"
 env: "Окружение"
 spirit: "Духовность"
 ---
+Hello everybody
+
 <div id="relax">{{ page.relax }}</div>
 <div id="creative">{{ page.creative }}</div>
 <div id="career">{{ page.career }}</div>
