@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+}
+
+.container {
+    background: lightblue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post {
+    width: 95%;
+    height: 90%;
+    border-radius: 20px;
+    background: white;
+}
+.header {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__buttons {
+    display: flex;
+    width: 50px;
+    justify-content: space-between;
+}
+.buttons__item {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.buttons__item_red {
+    background: tomato;
+}
+.buttons__item_yellow {
+    background: gold;
+}
+.buttons__item_green {
+    background: lightgreen;
+}
+
+.title {
+    text-align: center;
+}
+
+.header__links {
+    width: 70px;
+    background: lightgray;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.links__item {
+    text-align: center;
+    margin: 0 auto;
+}
