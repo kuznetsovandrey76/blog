@@ -37,63 +37,63 @@ spirit:
                     <div class="buttons__item buttons__item_yellow"></div>
                     <div class="buttons__item buttons__item_green"></div>
                 </div>
-                <div class="header__title title">
-                    {%- assign date_format = site.minima.date_format | default: "%d-%m-%Y" -%}
-                    <div class="title__text">{{ page.title }}</div>
-                    <div class="title__date">{{ page.date | date: date_format }}</div>
-                </div>
                 <select  class="header__links links" onchange="window.location.href=this.options[this.selectedIndex].value">
                     <option>go to</option>
                     <option class="links__item" value="{{ "/" | relative_url }}">home</option>
                     <option class="links__item" value="{{ "/about" | relative_url }}">about</option>
                 </select>
             </div>
+            <div class="header__title title">
+                {%- assign date_format = site.minima.date_format | default: "%d-%m-%Y" -%}
+                <div class="title__text">{{ page.title }}</div>
+                <div class="title__date">{{ page.date | date: date_format }}</div>
+            </div>
             <ul class="nav">
                 <li class="nav__item">
                     <div class="nav__image">
-                        <img src="{{ site.images_path }}/icon/relax.png" alt="relax">
+                        <img class="nav__icon" src="{{ site.images_path }}/icon/relax.png" alt="relax">
                     </div>
                     <p class="nav__name">relax</p>                    
                 </li>
                 <li class="nav__item">
                     <div class="nav__image">
-                        <img src="{{ site.images_path }}/icon/creative.png" alt="creative">
+                        <img class="nav__icon" src="{{ site.images_path }}/icon/creative.png" alt="creative">
                     </div>
                     <p class="nav__name">create</p>                    
                 </li>
                 <li class="nav__item">
                     <div class="nav__image">
-                        <img src="{{ site.images_path }}/icon/career.png" alt="career">
+                        <img class="nav__icon" src="{{ site.images_path }}/icon/career.png" alt="career">
                     </div>
                     <p class="nav__name">career</p>                    
                 </li>
                 <li class="nav__item">
                     <div class="nav__image">
-                        <img src="{{ site.images_path }}/icon/health.png" alt="health">
+                        <img class="nav__icon" src="{{ site.images_path }}/icon/health.png" alt="health">
                     </div>
                     <p class="nav__name">health</p>                    
                 </li>
                 <li class="nav__item">
                     <div class="nav__image">
-                        <img src="{{ site.images_path }}/icon/family.png" alt="family">
+                        <img class="nav__icon" src="{{ site.images_path }}/icon/family.png" alt="family">
                     </div>
                     <p class="nav__name">family</p>                    
                 </li>
                 <li class="nav__item">
                     <div class="nav__image">
-                        <img src="{{ site.images_path }}/icon/rise.png" alt="rise">
+                        <img class="nav__icon" src="{{ site.images_path }}/icon/rise.png" alt="rise">
                     </div>
                     <p class="nav__name">rise</p>                    
                 </li>
                 <li class="nav__item">
                     <div class="nav__image">
-                        <img src="{{ site.images_path }}/icon/env.png" alt="env">
+                        <img class="nav__icon" src="{{ site.images_path }}/icon/env.png" alt="env">
                     </div>
                     <p class="nav__name">env</p>                    
                 </li>
                 <li class="nav__item">
                     <div class="nav__image">
-                        <img src="{{ site.images_path }}/icon/spirit.png" alt="spirit">
+                        <img class="nav__icon" src="{{ site.images_path }}/icon/spirit.png" alt="spirit">
                     </div>
                     <p class="nav__name">spirit</p>                    
                 </li>
