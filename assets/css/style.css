@@ -1,17 +1,17 @@
 body {
     margin: 0;
-    font-family: "Tahoma";
-
+    font-family: 'Lora', sans-serif;
 }
 
 
 /* HEADER */
 .header {
-    background: #fc0;
+    background: #b1eaff;
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-bottom: 1px solid lightslategray;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
 }
 .header__link {
     text-decoration: none;
