@@ -15,5 +15,9 @@ $( document ).ready(function() {
         });
         $('#' + select_item).show();
     });
+
+    $('.buttons__item_red').click(function() {
+        window.location = "/";
+    });
   });
 

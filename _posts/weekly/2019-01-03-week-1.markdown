@@ -1,8 +1,12 @@
 ---
 layout: single-post
-title: "Название"
+title: "3 января"
 date: 2019-01-03 10:00:00 +0300
-relax: "Отдых"
+permalink: /:day-:month-:year.html
+relax: 
+  title: "Отдых"
+  text: |
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt molestias accusantium explicabo eaque, inventore tempora natus assumenda! Nobis exercitationem saepe sint consequuntur ipsum rem placeat magni aliquam, asperiores optio nesciunt?</p>
 creative: "Творчество"
 career: "Карьера"
 health: "Здоровье"
@@ -11,9 +15,10 @@ rise: "Личностный рост"
 env: "Окружение"
 spirit: "Духовность"
 ---
-Hello everybody
-
-<div id="relax">{{ page.relax }}</div>
+<div id="relax">
+  {{ page.relax.title }}
+  {{ page.relax.text }}
+</div>
 <div id="creative">{{ page.creative }}</div>
 <div id="career">{{ page.career }}</div>
 <div id="health">{{ page.health }}</div>
