@@ -1,12 +1,12 @@
 $( document ).ready(function() {
-    const items = ['relax', 'creative', 'career', 'health', 'family', 'rise', 'env', 'spirit'];
+    var items = ['relax', 'creative', 'career', 'health', 'family', 'rise', 'env', 'spirit'];
     for (var i = 0; i < items.length; ++i) {
         $('#' + items[i]).hide();
+        alert(items[i]);
 	}
 
     $('.nav__item').click(function() {
-        let select_item = $(this).find('p').text();
-        console.log(select_item);
+        var select_item = $(this).find('p').text();
 
         for (var i = 0; i < items.length; ++i) {
             $('#' + items[i]).hide();
