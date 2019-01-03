@@ -10,6 +10,7 @@ author: "Andrey Kuznetsov"
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="{{ "/assets/css/post.css" | relative_url }}">
         <title>{{ site.title }}</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>    
 <body>
     <div class="container">
@@ -65,7 +66,11 @@ author: "Andrey Kuznetsov"
                     <p class="nav__name">spirit</p>                    
                 </li>
             </ul>
+            <div class="content">
+                {{ content }}
+            </div>            
         </div>
     </div>
+    <script src="{{ "/assets/js/post.js" | relative_url }}"></script>
 </body>
 </html>

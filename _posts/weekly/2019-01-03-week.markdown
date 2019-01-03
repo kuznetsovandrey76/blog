@@ -2,5 +2,20 @@
 layout: single-post
 title: "Название"
 date: 2019-01-03 10:00:00 +0300
+relax: "Отдых"
+creative: "Творчество"
+career: "Карьера"
+health: "Здоровье"
+family: "Семья, отношения"
+rise: "Личностный рост"
+env: "Окружение"
+spirit: "Духовность"
 ---
-hello
+<div id="relax">{{ page.relax }}</div>
+<div id="creative">{{ page.creative }}</div>
+<div id="career">{{ page.career }}</div>
+<div id="health">{{ page.health }}</div>
+<div id="family">{{ page.family }}</div>
+<div id="rise">{{ page.rise }}</div>
+<div id="env">{{ page.env }}</div>
+<div id="spirit">{{ page.spirit }}</div>

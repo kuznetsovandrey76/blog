@@ -25,7 +25,7 @@ body {
 .header {
     display: flex;
     width: 95%;
-    margin: 0 auto 150px;
+    margin: 0 auto 70px;
     height: 50px;
     justify-content: space-between;
     align-items: center;
@@ -86,7 +86,19 @@ body {
 }
 .nav__item {
     text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+.nav__item:hover {
+    background: azure;
 }
 .nav__name {
     margin: 0;
+}
+
+
+/* CONTENT */
+.content {
+    margin: 20px;
 }
