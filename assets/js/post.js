@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    var items = ['relax', 'creative', 'career', 'health', 'family', 'rise', 'env', 'spirit'];
+    var items = ['relax', 'create', 'career', 'health', 'family', 'rise', 'env', 'spirit'];
     // for (var i = 0; i < items.length; ++i) {
     //     $('#' + items[i]).hide();
     // }
@@ -9,6 +9,10 @@ $( document ).ready(function() {
 
     $('.nav__item').click(function() {
         var select_item = $(this).find('p').text();
+        // Скрываем всем подписи под иконками
+        $('.nav__item').find('p').hide();
+        // Показываем только выбранную
+        $(this).find('p').show();
 
         $.each(items, function(index, value){
             $('#' + value).hide();

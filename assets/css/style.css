@@ -56,6 +56,9 @@ body {
 .posts__link:hover {
     color: gray;
 }
+.posts__td {
+    padding: 0 5px;
+}
 
 .post__image {
     width: 200px;
