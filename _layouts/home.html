@@ -13,8 +13,8 @@ permalink: /
     {%- for post in site.posts -%}
     {%- assign date_format = site.minima.date_format | default: "%Y %b %d" -%}
     <tr>            
-        <td><span class="posts__date">{{ post.date | date: date_format }}</span></td>
-        <td><a class="posts__link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></td>            
+        <td class="posts__td"><span class="posts__date">{{ post.date | date: date_format }}</span></td>
+        <td class="posts__td"><a class="posts__link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></td>            
     </tr> 
     {%- endfor -%}
 </table>

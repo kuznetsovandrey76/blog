@@ -1,0 +1,108 @@
+---
+title: "Без названия :)"
+author: "Andrey Kuznetsov"
+relax: 
+  title: "Отдых"
+create: 
+  title: "Творчество"
+career: 
+  title: "Карьера"
+health: 
+  title: "Здоровье"
+family: 
+  title: "Семья, отношения"
+rise: 
+  title: "Личностный рост"
+env: 
+  title: "Окружение"
+spirit: 
+  title: "Духовность"
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{{ "/assets/css/post.css" | relative_url }}">
+        <title>{{ site.title }}</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>    
+<body>
+    <div class="container">
+        <div class="post">
+            <div class="header">
+                <div class="header__buttons buttons">
+                    <div class="buttons__item buttons__item_red"></div>
+                    <div class="buttons__item buttons__item_yellow"></div>
+                    <div class="buttons__item buttons__item_green"></div>
+                </div>
+                <div class="header__title title">
+                    {%- assign date_format = site.minima.date_format | default: "%d-%m-%Y" -%}
+                    <div class="title__text">{{ page.title }}</div>
+                    <div class="title__date">{{ page.date | date: date_format }}</div>
+                </div>
+                <select  class="header__links links" onchange="window.location.href=this.options[this.selectedIndex].value">
+                    <option>go to</option>
+                    <option class="links__item" value="{{ "/" | relative_url }}">home</option>
+                    <option class="links__item" value="{{ "/about" | relative_url }}">about</option>
+                </select>
+            </div>
+            <ul class="nav">
+                <li class="nav__item">
+                    <div class="nav__image">
+                        <img src="{{ site.images_path }}/icon/relax.png" alt="relax">
+                    </div>
+                    <p class="nav__name">relax</p>                    
+                </li>
+                <li class="nav__item">
+                    <div class="nav__image">
+                        <img src="{{ site.images_path }}/icon/creative.png" alt="creative">
+                    </div>
+                    <p class="nav__name">create</p>                    
+                </li>
+                <li class="nav__item">
+                    <div class="nav__image">
+                        <img src="{{ site.images_path }}/icon/career.png" alt="career">
+                    </div>
+                    <p class="nav__name">career</p>                    
+                </li>
+                <li class="nav__item">
+                    <div class="nav__image">
+                        <img src="{{ site.images_path }}/icon/health.png" alt="health">
+                    </div>
+                    <p class="nav__name">health</p>                    
+                </li>
+                <li class="nav__item">
+                    <div class="nav__image">
+                        <img src="{{ site.images_path }}/icon/family.png" alt="family">
+                    </div>
+                    <p class="nav__name">family</p>                    
+                </li>
+                <li class="nav__item">
+                    <div class="nav__image">
+                        <img src="{{ site.images_path }}/icon/rise.png" alt="rise">
+                    </div>
+                    <p class="nav__name">rise</p>                    
+                </li>
+                <li class="nav__item">
+                    <div class="nav__image">
+                        <img src="{{ site.images_path }}/icon/env.png" alt="env">
+                    </div>
+                    <p class="nav__name">env</p>                    
+                </li>
+                <li class="nav__item">
+                    <div class="nav__image">
+                        <img src="{{ site.images_path }}/icon/spirit.png" alt="spirit">
+                    </div>
+                    <p class="nav__name">spirit</p>                    
+                </li>
+            </ul>
+            <div class="content">
+                {{ content }}
+            </div>            
+        </div>
+    </div>
+    <script src="{{ "/assets/js/post.js" | relative_url }}"></script>
+</body>
+</html>

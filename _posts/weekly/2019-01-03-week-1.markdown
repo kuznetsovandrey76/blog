@@ -1,0 +1,57 @@
+---
+layout: single-post
+title: "Макет weekly"
+date: 2019-01-03 10:00:00 +0300
+permalink: /:day-:month-:year.html
+
+# content
+relax_text: |
+  <p></p>
+create_text: |
+  <p>Работа с Jekyll, Yarn</p>
+  <p>Работа с DNS reg.ru</p>
+career_text: |
+  <p></p>
+family_text: |
+  <p></p>
+health_text: |
+  <p></p>
+rise_text: |
+  <p></p>
+env_text: |
+  <p></p>
+spirit_text: |
+  <p></p>
+---
+<div id="relax">
+  <h2>{{ layout.relax.title }}</h2>
+  {{ page.relax_text }}
+</div>
+<div id="create">
+  <h2>{{ layout.create.title }}</h2>
+  {{ page.create_text }}
+</div>
+<div id="career">
+  <h2>{{ layout.career.title }}</h2>
+  {{ page.career_text }}
+</div>
+<div id="health">
+  <h2>{{ layout.health.title }}</h2>
+  {{ page.health_text }}
+</div>
+<div id="family">
+  <h2>{{ layout.family.title }}</h2>
+  {{ page.family_text }}
+</div>
+<div id="rise">
+  <h2>{{ layout.rise.title }}</h2>
+  {{ page.rise_text }}
+</div>
+<div id="env">
+  <h2>{{ layout.env.title }}</h2>
+  {{ page.env_text }}
+</div>
+<div id="spirit">
+  <h2>{{ layout.spirit.title }}</h2>
+  {{ page.spirit_text }}
+</div>
