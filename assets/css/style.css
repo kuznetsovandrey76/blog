@@ -35,6 +35,7 @@ body {
 }
 
 
+/* POSTS */
 .posts {
     list-style-type: none;
     margin: 0 auto;
@@ -59,7 +60,6 @@ body {
 .posts__td {
     padding: 0 5px;
 }
-
 .post__image {
     width: 200px;
     height: 200px;
@@ -73,7 +73,6 @@ body {
 
 
 /* FOOTER */
-
 .footer__list {
     display: flex;
     list-style: none;
