@@ -10,67 +10,91 @@ data:
   title: "Яркость жизни"
   list: "Развлечения, Отдых, Хобби, Путешествия, Впечатления"
   text: |
-    <p></p>
-    <p>Walk</p>
-    <p>Travel</p>
+    <h3>Walk</h3>
+    <h3>Travel</h3>
+    <h3>Films</h3>
 - name: "create" 
   title: "Обеспеченность"
   list: "Доходы, Расходы, Условия жизни"
   text: |
-    <p></p>
+    <h3>Доходы</h3>
+    <h3>Расходы</h3>
+    <h3>Условия жизни</h3>
 - name: "career" 
   title: "Призвание"
   list: "Работа, Карьера, Бизнес, Профессия, Занятость, Соц. статус"
   text: |
-    <p></p>
-    <p>Work</p>
+    <h3>Работа</h3>
+    <h3>Карьера</h3>
+    <h3>Бизнес</h3>
+    <h3>Профессия</h3>
+    <h3>Занятость</h3>
+    <h3>Соц. статус</h3>
 - name: "health" 
   title: "Здоровье"
   list: "Самочувствие, Внешний вид, Подвижность, Настроение, Прогулки, Бодрость, Питание, Режим, Спорт, Сон"
   text: |
-    <p></p>
-    <p>Sport</p>
+    <h3>Самочувствие</h3>
+    <h3>Внешний вид</h3>
+    <h3>Подвижность</h3>
+    <h3>Настроение</h3>
+    <h3>Прогулки</h3>
+    <h3>Бодрость</h3>
+    <h3>Питание</h3>
+    <h3>Режим</h3>
+    <h3>Спорт</h3>
+    <h3>Сон</h3>
 - name: "family" 
   title: "Отношения"
-  list: "Общение, Дружба, Любовь, Сеиья"
+  list: "Общение, Дружба, Любовь, Семья"
   text: |
-    <p>Family</p>
-    <p>Love</p>
+    <h3>Общение</h3>
+    <h3>Дружба</h3>
+    <h3>Любовь</h3>
+    <h3>Семья</h3>
 - name: "rise" 
   title: "Самосовершенствование"
   list: "Обучение, Работа над собой, Личностный рост" 
   text: |
-    <p></p>
-    <p>Read later...</p>
+    <h3>Read later...</h3>
     <ul>
       <li><a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D1%81%D1%83%D0%B4%D0%B5%D0%B2,_%D0%94%D0%B6%D0%B0%D0%B3%D0%B3%D0%B8">Садхгуру - медитация</a></li>
       <li><a href="https://www.litres.ru/dzho-dispenza/">Джо Диспенза - мозг</a></li>
       <li><a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8,_%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82">Роберт Сапольски - поведение человека</a></li>
     </ul>
-    <p>Books</p>
-    <p>Videos</p>
-    <p>Films</p>
+    <h3>Books</h3>
+    <img class="content__image book__image" src="assets/img/week1/drive.jpg" alt="drive">
+    <h3>Videos</h3>
+    <h3>Programming</h3>
     <p>Работа с Jekyll, Yarn</p>
     <p>Работа с DNS reg.ru</p>
-    <img src="assets/img/week1/life-balance.jpg" alt="life balance">
+    <h3>Education</h3>
+    <img class="content__image" src="assets/img/week1/life-balance.jpg" alt="life balance">
 - name: "env" 
   title: "Окружение"
   list: "Родные, Коллеги, Друзья, Соседи, Оппоненты"
   text: |
-    <p></p>
-    <p>Friends</p>
+    <h3>Родные</h3>
+    <h3>Коллеги</h3>
+    <h3>Друзья</h3>
+    <h3>Соседи</h3>
+    <h3>Оппоненты</h3>
 - name: "spirit" 
   title: "Духовность"
-  list: "Вера, Творчество Искусство" 
+  list: "Вера, Творчество, Искусство" 
   text: |
-    <p></p>
-    <p>Philosophy</p>
+    <h3>Вера</h3>
+    <h3>Творчество</h3>
+    <h3>Искусство</h3>
 ---
+
 {% for item in page.data %}
   <div class="content__block" id="{{ item.name }}">
     <h2 class="content__title">{{ item.title }}</h2>
-      <!-- {{ item.list }} -->
-      {{ item.text }}
+    <div class="content__inner"> 
+        <!-- {{ item.list }} -->
+        {{ item.text }}
+    </div>
   </div>
 {% endfor %}
 
