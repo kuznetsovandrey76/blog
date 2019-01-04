@@ -7,34 +7,38 @@ published: true
 
 data:
 - name: "relax" 
-  title: "Яркость жизни, впечатления"
+  title: "Яркость жизни"
+  list: "Развлечения, Отдых, Хобби, Путешествия, Впечатления"
   text: |
     <p></p>
     <p>Walk</p>
     <p>Travel</p>
 - name: "create" 
-  title: "Творчество и спонтанность"
+  title: "Обеспеченность"
+  list: "Доходы, Расходы, Условия жизни"
   text: |
     <p></p>
-    <p>Работа с Jekyll, Yarn</p>
-    <p>Работа с DNS reg.ru</p>
 - name: "career" 
-  title: "Работа, финансы"
+  title: "Призвание"
+  list: "Работа, Карьера, Бизнес, Профессия, Занятость, Соц. статус"
   text: |
     <p></p>
     <p>Work</p>
 - name: "health" 
-  title: "Здоровье и спорт"
+  title: "Здоровье"
+  list: "Самочувствие, Внешний вид, Подвижность, Настроение, Прогулки, Бодрость, Питание, Режим, Спорт, Сон"
   text: |
     <p></p>
     <p>Sport</p>
 - name: "family" 
-  title: "Семья, личные отношения"
+  title: "Отношения"
+  list: "Общение, Дружба, Любовь, Сеиья"
   text: |
     <p>Family</p>
     <p>Love</p>
 - name: "rise" 
-  title: "Личностный рост, ум, навыки"
+  title: "Самосовершенствование"
+  list: "Обучение, Работа над собой, Личностный рост" 
   text: |
     <p></p>
     <p>Read later...</p>
@@ -46,13 +50,18 @@ data:
     <p>Books</p>
     <p>Videos</p>
     <p>Films</p>
+    <p>Работа с Jekyll, Yarn</p>
+    <p>Работа с DNS reg.ru</p>
+    <img src="assets/img/week1/life-balance.jpg" alt="life balance">
 - name: "env" 
-  title: "Друзья и окружение"
+  title: "Окружение"
+  list: "Родные, Коллеги, Друзья, Соседи, Оппоненты"
   text: |
     <p></p>
     <p>Friends</p>
 - name: "spirit" 
-  title: "Духовность и осознанность"
+  title: "Духовность"
+  list: "Вера, Творчество Искусство" 
   text: |
     <p></p>
     <p>Philosophy</p>
@@ -60,6 +69,7 @@ data:
 {% for item in page.data %}
   <div class="content__block" id="{{ item.name }}">
     <h2 class="content__title">{{ item.title }}</h2>
+      <!-- {{ item.list }} -->
       {{ item.text }}
   </div>
 {% endfor %}
