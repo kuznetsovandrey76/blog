@@ -1,0 +1,66 @@
+---
+layout: weekly
+title: "Week #1, 31.12 - 06.01"
+date: 2018-12-31 22:00:00 +0300
+permalink: /:day-:month-:year.html
+published: true
+
+data:
+- name: "relax" 
+  title: "Яркость жизни, впечатления"
+  text: |
+    <p></p>
+    <p>Walk</p>
+    <p>Travel</p>
+- name: "create" 
+  title: "Творчество и спонтанность"
+  text: |
+    <p></p>
+    <p>Работа с Jekyll, Yarn</p>
+    <p>Работа с DNS reg.ru</p>
+- name: "career" 
+  title: "Работа, финансы"
+  text: |
+    <p></p>
+    <p>Work</p>
+- name: "health" 
+  title: "Здоровье и спорт"
+  text: |
+    <p></p>
+    <p>Sport</p>
+- name: "family" 
+  title: "Семья, личные отношения"
+  text: |
+    <p>Family</p>
+    <p>Love</p>
+- name: "rise" 
+  title: "Личностный рост, ум, навыки"
+  text: |
+    <p></p>
+    <p>Read later...</p>
+    <ul>
+      <li><a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D1%81%D1%83%D0%B4%D0%B5%D0%B2,_%D0%94%D0%B6%D0%B0%D0%B3%D0%B3%D0%B8">Садхгуру - медитация</a></li>
+      <li><a href="https://www.litres.ru/dzho-dispenza/">Джо Диспенза - мозг</a></li>
+      <li><a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8,_%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82">Роберт Сапольски - поведение человека</a></li>
+    </ul>
+    <p>Books</p>
+    <p>Videos</p>
+    <p>Films</p>
+- name: "env" 
+  title: "Друзья и окружение"
+  text: |
+    <p></p>
+    <p>Friends</p>
+- name: "spirit" 
+  title: "Духовность и осознанность"
+  text: |
+    <p></p>
+    <p>Philosophy</p>
+---
+{% for item in page.data %}
+  <div class="content__block" id="{{ item.name }}">
+    <h2 class="content__title">{{ item.title }}</h2>
+      {{ item.text }}
+  </div>
+{% endfor %}
+

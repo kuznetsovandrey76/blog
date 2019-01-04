@@ -1,19 +1,15 @@
 title: Andrey Kuznetsov
 email: and.rey.q@yandex.ru
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+
 url: ""
-
-# gh-pages
-# baseurl: "blog" 
-# images_path: "/blog/assets/img" 
-
-# local
 baseurl: "" 
 images_path: "/assets/img" 
 
+# for gh-pages - without subdomain
+# baseurl: "blog" 
+# images_path: "/blog/assets/img" 
+
+# social
 github_username:  kuznetsovandrey76
 
 markdown: kramdown
@@ -21,14 +17,4 @@ theme: minima
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+

@@ -7,6 +7,7 @@ $( document ).ready(function() {
         $('#' + value).hide();
     });
 
+
     $('.nav__item').click(function() {
         var select_item = $(this).find('p').text();
         // Скрываем всем подписи под иконками
@@ -23,5 +24,9 @@ $( document ).ready(function() {
     $('.buttons__item_red').click(function() {
         window.location = "/";
     });
+
+
+    // SHOW all data in weekly post
+    // $(".content__block").css("display", "block")
   });
 
