@@ -151,6 +151,16 @@ body {
   margin: 0 auto;
 }
 
+
+/* TASKS */
+.task {
+
+}
+.task-todo {
+    color: darkgoldenrod;
+}
+
+
 @media (max-width: 991px) { 
     .nav__image {
         padding: 18px;

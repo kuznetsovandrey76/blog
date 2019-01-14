@@ -27,6 +27,9 @@ $( document ).ready(function() {
 
 
     // SHOW all data in weekly post
-    // $(".content__block").css("display", "block")
-  });
+    $('.buttons__item_green').click(function() {
+        $(".content__block").css("display", "block");
+    });  
+
+});
 
